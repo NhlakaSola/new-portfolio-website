@@ -1,11 +1,16 @@
+@font-face{
+  font-family: myFirstFont;
+  src: url(Container.woff);
+}
+
 html, body{
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-family: myFirstFont;
+  
 }
-
 
 
 .intro{
@@ -34,13 +39,13 @@ html, body{
     margin:0 auto;
     text-align: center;
     padding: 30px;
-    border: 2px solid rgba(105, 30, 202, 0.932);
+    border: 2px solid #000;
     border-radius: 50px;
     
 }
 
 .content h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: myFirstFont;
     color: white;
     text-shadow: 0px 0px 300px #000;
     font-size: 350%;
@@ -49,52 +54,54 @@ html, body{
 }
 
 .content h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: myFirstFont;
     color: #fff;
     font-size: 150%;
+    
 
 }
 
 .btn{
     border-radius:9px ;
-    border: solid rgba(105, 30, 202, 0.932);
+    border: solid #000;
     color: rgba(247, 247, 248, 0.932);
-    background: rgba(105, 30, 202, 0.932);
+    background: #000;
     font-size: 24px;
     text-decoration: none;
     padding: 10px 20px ;
 }
 
 .btn:hover{
-    color: rgba(105, 30, 202, 0.932);
+    color: #000;
     background: white;
-    border: solid rgb(105, 30, 202, 0.932) 3px;
+    border: solid #000 3px;
 
 }
 
 #about-me, #previous-work, #contact-me{
-    height: 70%;
-    width: 80%;
+    height: 100vh;
+    width: 80%; 
     font-size: 100%;
     line-height: 210%;
     text-align: center;
     padding-left: 130px;
     padding-top: 30px;
     padding-bottom: 50px;
-       
+
 }
+
 
 a
 {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   
   transition: color 0.3s ease;
 }
 
 a:hover
 {
-  color: rgba(105, 30, 202, 0.932);
+  color: #000;
   
 }
 
@@ -128,7 +135,7 @@ a:hover
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  background: rgba(105, 30, 202, 0.932);
+  background: #000;
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
@@ -151,7 +158,7 @@ a:hover
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: rgba(105, 30, 202, 0.932);
+  background: #000;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3)
@@ -193,10 +200,10 @@ a:hover
 
 footer {
   margin-top: 2rem;
-  background: rgba(105, 30, 202, 0.932);
+  background: #000;
   color: white;
   text-align: center;
-  padding: 1rem;
+  width: 100%;
   
 }
 
@@ -216,7 +223,7 @@ footer {
         font-size: 110%;
         padding: 7px 15px;
         color: white;
-        background: rgba(105, 30, 202, 0.932);
+        background: #000;
         
 
     }
@@ -228,16 +235,16 @@ footer {
 
     a:hover
     {
-      color: rgba(105, 30, 202, 0.932);
+      color: #000;
   
     } 
 
     #menuToggle span{
-      background: rgba(105, 30, 202, 0.932);
+      background:#000;
     }
     
     #menuToggle input:checked ~ span{
-      background: rgba(105, 30, 202, 0.932);
+      background: #000;
     }
 
 
