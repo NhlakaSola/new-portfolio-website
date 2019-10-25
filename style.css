@@ -14,23 +14,22 @@ html, body{
 
 
 .intro{
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background: url(images/landing.jpg);
-    display: table;
-    top: 0;
-    background-size: cover;
-    border: solid #fff;
-
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+  background: url(images/landing.jpg);
+  display: table;
+  top: 0;
+  background-size: cover;
+  border: solid #fff;
+  padding: 0 1.5em;
 }
 
 .intro .inner{
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-    max-width: none;
-
+    min-width: 5em;
 }
 
 
@@ -72,22 +71,20 @@ html, body{
 }
 
 .btn:hover{
-    color: #000;
-    background: white;
-    border: solid #000 3px;
-
+  color: #000;
+  background: white;
+  border: solid #000 3px;
 }
 
 #about-me, #previous-work, #contact-me{
-    height: 100vh;
-    width: 80%; 
-    font-size: 100%;
-    line-height: 210%;
-    text-align: center;
-    padding-left: 130px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-
+  height: 100vh;
+  width: 80%; 
+  margin: 0 auto;
+  font-size: 100%;
+  line-height: 210%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 
@@ -180,7 +177,7 @@ a:hover
   padding: 50px;
   padding-top: 125px;
   
-  
+  background: rgba(255,255,255, .75);
   list-style-type: none;
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
@@ -198,8 +195,24 @@ a:hover
   transform: none;
 }
 
+#contact-me {
+  width: 100vw;
+  padding: 1.5em;
+}
+
+#contact-me input {
+  width: 90%;
+  margin: 0 auto;
+  height: 1.75rem;
+}
+
+#contact-me textarea {
+  width: 90%;
+  margin: 0 auto;
+}
+
 footer {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   background: #000;
   color: white;
   text-align: center;
@@ -208,44 +221,43 @@ footer {
 }
 
 @media screen and (max-width: 768px){
-    .intro{
-        background-size: auto;
-    }
-    .content h1{
-        font-size: 150%;
-    }  
-    
-    .content h3{
-      font-size: 90%;
-    }
+  .intro{
+    background-size: auto;
+      
+  }    
 
-    .btn{
-        font-size: 110%;
-        padding: 7px 15px;
-        color: white;
-        background: #000;
-        
-
-    }
-
-    p{
-        font-size: 100%;
-        line-height: 160%;
-    }
-
-    a:hover
-    {
-      color: #000;
+  .content h1{
+    font-size: 150%;
+  }  
   
-    } 
+  .content h3{
+    font-size: 90%;
+  }
 
-    #menuToggle span{
-      background:#000;
-    }
-    
-    #menuToggle input:checked ~ span{
-      background: #000;
-    }
+  .btn{
+    font-size: 110%;
+    padding: 7px 15px;
+    color: white;
+    background: #000;
+  }
 
 
+  p{
+      font-size: 100%;
+      line-height: 160%;
+  }
+
+  a:hover
+  {
+    color: #000;
+
+  } 
+
+  #menuToggle span{
+    background:#000;
+  }
+  
+  #menuToggle input:checked ~ span{
+    background: #000;
+  }
 }
